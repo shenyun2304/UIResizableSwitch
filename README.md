@@ -53,7 +53,7 @@ or
 6.change it value manually 
 
 ~~~~swift
-sw.on = true // or false
+sw.on = true // or false, animation is false
 
 sw.setOn(true,animated:true) // with animation
 
@@ -63,5 +63,12 @@ sw.setOn(true,animated:true) // with animation
 
 ~~~~swift
 sw.customSwitch
+
+~~~~
+
+8.set initial on in the viewDidLoad if needed, the initialOn default is true
+
+~~~~swift
+sw.initialOn = false
 
 ~~~~

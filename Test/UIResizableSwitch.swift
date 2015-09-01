@@ -21,6 +21,7 @@ import UIKit
         }
     }
     
+    var initialOn: Bool = true
 
     func setOn(on: Bool, animated: Bool) {
         self.customSwitch.setOn(on, animated: animated)
@@ -43,6 +44,7 @@ import UIKit
             customSwitch.layer.contentsScale = UIScreen.mainScreen().scale
             customSwitch.addTarget(self, action: "triggerValueChange:", forControlEvents: UIControlEvents.ValueChanged)
             self.addSubview(customSwitch)
+            self.on = initialOn
             isSetted = true
         }
     }
